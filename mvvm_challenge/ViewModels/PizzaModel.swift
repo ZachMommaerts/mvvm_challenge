@@ -7,9 +7,9 @@
 
 import Foundation
 
-class PizzaModel{
+class PizzaModel:ObservableObject{
     
-    var pizzaArray = [Pizza]()
+    @Published var pizzaArray = [Pizza]()
     
     init(){
         

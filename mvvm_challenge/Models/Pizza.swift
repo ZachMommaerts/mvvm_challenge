@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Pizza: Identifiable{
+struct Pizza: Identifiable{
     
     var id = UUID()
     var name:String

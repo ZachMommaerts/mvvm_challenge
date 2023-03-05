@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var pizzas = PizzaModel()
+    @ObservedObject var pizzas = PizzaModel()
     var body: some View {
         VStack {
             List(pizzas.pizzaArray){ pizza in
@@ -23,6 +23,13 @@ struct ContentView: View {
                     }
                 }
             }
+            Button(action: {
+                for i in pizzas.pizzaArray.indices{
+                    pizzas.pizzaArray[i].topping1 = "pineapple"
+                }
+            }, label: {
+                Text("Add Pineapple")
+            })
         }
         .padding()
     }
