@@ -1,0 +1,20 @@
+[
+    {
+        "name": "BBQ",
+        "toppings": [
+                "Chicken", "Red Onions", "BBQ Sauce"
+            ]
+    },
+    {
+        "name": "Hawaiian",
+        "toppings": [
+                "Gruyere Cheese", "Ham", "Pineapple"
+            ]
+    },
+    {
+        "name": "Meat Lovers",
+        "toppings": [
+                "Sausage", "Pepperoni", "Canadian Bacon"
+            ]
+    }
+]
