@@ -1,20 +1,20 @@
 [
     {
         "name": "BBQ",
-        "toppings": [
-                "Chicken", "Red Onions", "BBQ Sauce"
-            ]
+        "topping1": "Chicken",
+        "topping2": "Red Onions",
+        "topping3": "BBQ Sauce",
     },
     {
         "name": "Hawaiian",
-        "toppings": [
-                "Gruyere Cheese", "Ham", "Pineapple"
-            ]
+        "topping1": "Gruyere Cheese",
+        "topping2": "Ham",
+        "topping3": "Pineapple"
     },
     {
         "name": "Meat Lovers",
-        "toppings": [
-                "Sausage", "Pepperoni", "Canadian Bacon"
-            ]
+        "topping1": "Sausage",
+        "topping2": "Pepperoni",
+        "topping3" : "Canadian Bacon"
     }
 ]

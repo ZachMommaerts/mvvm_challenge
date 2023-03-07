@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Pizza: Identifiable{
+class Pizza: Identifiable, Decodable{
     
-    var id = UUID()
+    var id:UUID?
     var name:String
     var topping1:String
     var topping2:String

@@ -12,11 +12,31 @@ class PizzaModel:ObservableObject{
     @Published var pizzaArray = [Pizza]()
     
     init(){
+        let pathString = Bundle.main.path(forResource: "data", ofType: "json")
         
-        pizzaArray.append(Pizza(name: "BBQ", topping1: "Chicken", topping2: "Red Onions", topping3: "BBQ sauce"))
+        if let path = pathString{
+            let url = URL(fileURLWithPath: path)
+            
+            do{
+                let data = try Data(contentsOf: url)
+                
+                let decoder = JSONDecoder()
+                
+                do{
+                    let pizzaData = try decoder.decode([Pizza].self, from: data)
+                    
+                    for pizza in pizzaData{
+                        pizza.id = UUID()
+                    }
+                    pizzaArray = pizzaData
+
+                } catch{
+                    print(error)
+                }
+            }catch{
+                print(error)
+            }
+        }
         
-        pizzaArray.append(Pizza(name: "Hawaiian", topping1: "Pineapple", topping2: "Ham", topping3: "gruyere"))
-        
-        pizzaArray.append(Pizza(name: "Meat Lovers", topping1: "Chicken", topping2: "Sausage", topping3: "Pepperoni"))
     }
 }
