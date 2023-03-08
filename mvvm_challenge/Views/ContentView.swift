@@ -27,12 +27,9 @@ struct ContentView: View {
                                 Text(pizza.name)
                                     .font(.title)
                                 HStack{
-                                    Text(pizza.topping1)
-                                        .font(.body)
-                                    Text(pizza.topping2)
-                                        .font(.body)
-                                    Text(pizza.topping3)
-                                        .font(.body)
+                                    ForEach(pizza.toppings, id: \.self){ topping in
+                                        Text(topping)
+                                    }
                                 }
                             }
                         }
@@ -41,7 +38,7 @@ struct ContentView: View {
             }
             Button(action: {
                 for i in pizzas.pizzaArray.indices{
-                    pizzas.pizzaArray[i].topping1 = "pineapple"
+                    pizzas.pizzaArray[i].toppings[0] = "pineapple"
                 }
             }, label: {
                 Text("Add Pineapple")
