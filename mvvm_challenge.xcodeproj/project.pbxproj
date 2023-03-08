@@ -59,12 +59,12 @@
 		418682F529B46EC00008FD2F /* mvvm_challenge */ = {
 			isa = PBXGroup;
 			children = (
-				41FB00A429B7BD9D0085E898 /* Services */,
+				418682F629B46EC00008FD2F /* mvvm_challengeApp.swift */,
 				4186830629B46F240008FD2F /* Models */,
 				4186830529B46F1B0008FD2F /* ViewModels */,
 				4186830429B46F0D0008FD2F /* Views */,
 				41C44B5D29B5A627002DDFA9 /* Data */,
-				418682F629B46EC00008FD2F /* mvvm_challengeApp.swift */,
+				41FB00A429B7BD9D0085E898 /* Services */,
 				418682FA29B46EC20008FD2F /* Assets.xcassets */,
 				418682FC29B46EC20008FD2F /* Preview Content */,
 			);

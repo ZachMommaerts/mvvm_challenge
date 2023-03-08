@@ -12,25 +12,29 @@ struct ContentView: View {
     @ObservedObject var pizzas = PizzaModel()
     var body: some View {
         VStack {
-            List(pizzas.pizzaArray){ pizza in
-                
-                HStack{
-                    Image(pizza.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50, alignment: .center)
-                        .clipped()
-                        .cornerRadius(5)
-                    VStack{
-                        Text(pizza.name)
-                            .font(.title)
+            ScrollView{
+                VStack(alignment: .leading){
+                    ForEach(pizzas.pizzaArray){ pizza in
+                        
                         HStack{
-                            Text(pizza.topping1)
-                                .font(.body)
-                            Text(pizza.topping2)
-                                .font(.body)
-                            Text(pizza.topping3)
-                                .font(.body)
+                            Image(pizza.image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50, alignment: .center)
+                                .clipped()
+                                .cornerRadius(15)
+                            VStack(alignment: .leading){
+                                Text(pizza.name)
+                                    .font(.title)
+                                HStack{
+                                    Text(pizza.topping1)
+                                        .font(.body)
+                                    Text(pizza.topping2)
+                                        .font(.body)
+                                    Text(pizza.topping3)
+                                        .font(.body)
+                                }
+                            }
                         }
                     }
                 }
