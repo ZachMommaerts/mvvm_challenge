@@ -14,12 +14,24 @@ struct ContentView: View {
         VStack {
             List(pizzas.pizzaArray){ pizza in
                 
-                VStack{
-                    Text(pizza.name)
-                    HStack{
-                        Text(pizza.topping1)
-                        Text(pizza.topping2)
-                        Text(pizza.topping3)
+                HStack{
+                    Image(pizza.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50, alignment: .center)
+                        .clipped()
+                        .cornerRadius(5)
+                    VStack{
+                        Text(pizza.name)
+                            .font(.title)
+                        HStack{
+                            Text(pizza.topping1)
+                                .font(.body)
+                            Text(pizza.topping2)
+                                .font(.body)
+                            Text(pizza.topping3)
+                                .font(.body)
+                        }
                     }
                 }
             }

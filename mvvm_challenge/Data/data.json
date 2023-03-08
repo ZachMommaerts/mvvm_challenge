@@ -1,18 +1,21 @@
 [
     {
         "name": "BBQ",
+        "image": "bbq",
         "topping1": "Chicken",
         "topping2": "Red Onions",
         "topping3": "BBQ Sauce",
     },
     {
         "name": "Hawaiian",
+        "image": "hawaiian",
         "topping1": "Gruyere Cheese",
         "topping2": "Ham",
         "topping3": "Pineapple"
     },
     {
         "name": "Meat Lovers",
+        "image": "meat lovers",
         "topping1": "Sausage",
         "topping2": "Pepperoni",
         "topping3" : "Canadian Bacon"

@@ -14,6 +14,7 @@
 		4186830829B46F660008FD2F /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186830729B46F660008FD2F /* Pizza.swift */; };
 		4186830A29B46FB60008FD2F /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186830929B46FB60008FD2F /* PizzaModel.swift */; };
 		41C44B5F29B5A670002DDFA9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 41C44B5E29B5A670002DDFA9 /* data.json */; };
+		41FB00A629B7BDCD0085E898 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB00A529B7BDCD0085E898 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4186830729B46F660008FD2F /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		4186830929B46FB60008FD2F /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		41C44B5E29B5A670002DDFA9 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		41FB00A529B7BDCD0085E898 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		418682F529B46EC00008FD2F /* mvvm_challenge */ = {
 			isa = PBXGroup;
 			children = (
+				41FB00A429B7BD9D0085E898 /* Services */,
 				4186830629B46F240008FD2F /* Models */,
 				4186830529B46F1B0008FD2F /* ViewModels */,
 				4186830429B46F0D0008FD2F /* Views */,
@@ -106,6 +109,14 @@
 				41C44B5E29B5A670002DDFA9 /* data.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		41FB00A429B7BD9D0085E898 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				41FB00A529B7BDCD0085E898 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				418682F729B46EC00008FD2F /* mvvm_challengeApp.swift in Sources */,
 				4186830A29B46FB60008FD2F /* PizzaModel.swift in Sources */,
 				4186830829B46F660008FD2F /* Pizza.swift in Sources */,
+				41FB00A629B7BDCD0085E898 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
