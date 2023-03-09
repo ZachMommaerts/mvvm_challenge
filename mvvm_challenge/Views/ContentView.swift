@@ -16,23 +16,7 @@ struct ContentView: View {
                 VStack(alignment: .leading){
                     ForEach(pizzas.pizzaArray){ pizza in
                         
-                        HStack{
-                            Image(pizza.image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50, height: 50, alignment: .center)
-                                .clipped()
-                                .cornerRadius(15)
-                            VStack(alignment: .leading){
-                                Text(pizza.name)
-                                    .font(.title)
-                                HStack{
-                                    ForEach(pizza.toppings, id: \.self){ topping in
-                                        Text(topping)
-                                    }
-                                }
-                            }
-                        }
+                        PizzaView(pizza: pizza)
                     }
                 }
             }

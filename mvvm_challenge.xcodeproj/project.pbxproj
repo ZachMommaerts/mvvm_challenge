@@ -13,6 +13,7 @@
 		418682FE29B46EC20008FD2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418682FD29B46EC20008FD2F /* Preview Assets.xcassets */; };
 		4186830829B46F660008FD2F /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186830729B46F660008FD2F /* Pizza.swift */; };
 		4186830A29B46FB60008FD2F /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4186830929B46FB60008FD2F /* PizzaModel.swift */; };
+		418DC64D29BA421D00013501 /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DC64C29BA421D00013501 /* PizzaView.swift */; };
 		41C44B5F29B5A670002DDFA9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 41C44B5E29B5A670002DDFA9 /* data.json */; };
 		41FB00A629B7BDCD0085E898 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB00A529B7BDCD0085E898 /* DataService.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 		418682FD29B46EC20008FD2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4186830729B46F660008FD2F /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		4186830929B46FB60008FD2F /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		418DC64C29BA421D00013501 /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
 		41C44B5E29B5A670002DDFA9 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		41FB00A529B7BDCD0085E898 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				418682F829B46EC00008FD2F /* ContentView.swift */,
+				418DC64C29BA421D00013501 /* PizzaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418682F929B46EC00008FD2F /* ContentView.swift in Sources */,
+				418DC64D29BA421D00013501 /* PizzaView.swift in Sources */,
 				418682F729B46EC00008FD2F /* mvvm_challengeApp.swift in Sources */,
 				4186830A29B46FB60008FD2F /* PizzaModel.swift in Sources */,
 				4186830829B46F660008FD2F /* Pizza.swift in Sources */,
